@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files/WinArl3.5/ArlequinStyleSheet.xsl"?>
+<!--Arlequin results file-->
+
+<Arlequin>
+
+<data>
+
+
+</data>
+
+<header>
+Arlequin results
+</header>
+<data>
+
+</data>
+
+ <A NAME="31_01_17at14_16_17"></A> 
+<data>
+
+</data> <run time="31/01/17 at 14:16:17">
+
+////////////////////////////////////////////////////////////////////
+RUN NUMBER 303 (31/01/17 at 14:16:17)
+////////////////////////////////////////////////////////////////////
+
+</run> <data>
+</data>
+
+ <A NAME="31_01_17at14_16_17_run_information"></A> 
+<data>
+
+
+Warning: The locus separator has been removed
+-------
+
+
+Project information:
+--------------------
+	NbSamples      =  1
+	DataType       =  RFLP
+	GenotypicData  =  0
+
+</data> <title time="31/01/17 at 14:16:17">
+
+==============================
+Settings used for Calculations
+==============================
+
+</title> <data>
+
+ General settings:
+ -----------------
+        Deletion Weight                = 1
+        Transition Weight Weight       = 1
+        Tranversion Weight Weight      = 1
+        Epsilon Value                  = 1e-07
+        Significant digits for output  = 5
+        Use original haplotype definition
+        Alllowed level of missing data = 0.05
+
+ Active Tasks:
+ -------------
+
+    Standard indices:
+    -----------------
+
+    Molecular Diversity:
+    --------------------
+        Molecular Distance :Pairwise difference
+        GammaA Value       = 0
+        Theta estimators   : 
+            Theta(Hom)
+            Theta(S)
+            Theta(k)
+            Theta(Pi)
+
+    Mismatch Distribution:
+    ----------------------
+        Molecular Distance             : Pairwise difference
+        GammaA Value                   = 0
+        Number of bootstrap replicates : 100
+
+
+==============================================================================
+== ANALYSES AT THE INTRA-POPULATION LEVEL
+==============================================================================
+</data>
+
+ <A NAME="31_01_17at14_16_17_group0"></A> 
+<data>
+
+
+===============================================================================
+== Sample : 	Tus muestras
+===============================================================================
+
+
+===============================
+== Standard diversity indices : (Tus muestras)
+===============================
+
+Reference: </data>
+<Reference>Nei, M., 1987.</Reference>
+<data>
+No. of gene copies       : 150
+No. haplotypes           : 19
+No. of loci              : 13
+No. of usable loci       : 13 loci with less than  5.00 % missing data
+No. of polymorphic sites : 13
+
+
+Results are only shown for polymorphic loci
+-------------------------------------------------
+           Num.
+           gene     Num.        Exp.
+Locus#    copies   alleles       Het
+-------------------------------------------------
+     1       150         2   0.19186
+     2       150         2   0.13682
+     3       150         2   0.24242
+     4       150         2   0.06488
+     5       150         2   0.12528
+     6       150         2   0.12528
+     7       150         2   0.02649
+     8       150         2   0.06488
+     9       150         2   0.05226
+    10       150         2   0.05226
+    11       150         2   0.02649
+    12       150         2   0.01333
+    13       150         2   0.10166
+-------------------------------------------------
+  Mean   150.000     2.000   0.09415
+  s.d.     0.000     0.000   0.06847
+-------------------------------------------------
+
+
+Haplotype-level computations
+----------------------------
+
+Sum of square freqs.     :  0.2320
+Gene diversity           :  0.7732 +/-  0.0320
+
+(Standard deviation is for the sampling process)
+
+================================
+== Molecular diversity indices : (Tus muestras)
+================================
+
+</data>
+<Reference>Tajima, F., 1983.</Reference>
+<Reference>Tajima, F. 1993.</Reference>
+<Reference>Nei, M., 1987.</Reference>
+<Reference>Zouros, E., 1979.</Reference>
+<Reference>Ewens, W.J. 1972.</Reference>
+<data>
+Sample size                                  : 150.0000
+No. of haplotypes                            : 19
+
+Allowed level of missing data                : 5.0000 %
+Number of observed indels                    : 0
+Number of polymorphic sites                  : 13
+Number of usable nucleotide sites            : 13
+
+
+Distance method : Pairwise difference
+Mean number of pairwise differences           :     1.223893 +/-     0.782815
+
+Average gene diversity over loci              :     0.094146 +/-     0.066654
+
+(Standard deviations are for both sampling and stochastic processes)
+
+       Theta(Hom) :     2.668450
+  S.D. Theta(Hom) :     0.521870
+
+         Theta(k) :     5.551609
+95 % confidence interval limits for theta(k) : [   3.308244,   9.027359 ]
+
+         Theta(S) :     2.327866
+    S.D. Theta(S) :     0.816389
+
+        Theta(Pi) :     1.223893
+   S.D. Theta(Pi) :     0.866500
+
+==========================
+== Mismatch distribution : (Tus muestras)
+==========================
+
+</data>
+<Reference>Li, W. H., 1977.</Reference>
+<Reference>Rogers, A., 1995.</Reference>
+<Reference>Harpending, R. C., 1994.</Reference>
+<Reference>Schneider, S., and L. Excoffier. 1999.</Reference>
+<Reference>Excoffier, L., 2004.</Reference>
+<data>
+Distance method : Pairwise difference
+
+  #Diff.   Count  Exp. Count
+  ------   -----  ----------
+       0    2535       0.000
+       1    4666       0.000
+       2    2995       0.000
+       3     895       0.000
+       4      84       0.000
+
+
+Estimated parameters from the sudden expansion model:
+-----------------------------------------------------
+
+Mismatch observed mean              :        1.224
+Mismatch observed variance          :        0.833
+Tau                                 :        1.354
+Theta0                              :        0.000
+Theta1                              :    99999.000
+
+Test of goodness-of-fit:
+------------------------
+
+         Sum of Squared deviation: 0.00811407
+          P(Sim. Ssd >= Obs. Ssd): 0.00000000
+    Harpending's Raggedness index: 0.09936032
+        P(Sim. Rag. >= Obs. Rag.): 0.01000000
+
+Mismatch distributions:
+---------------------
+</data> <mismatchDemogExp pop="Tus muestras" time="31/01/17 at 14:16:17">
+
+-----------------------------------------------------
+        #Diff     Observed    Simulated   Model Freq.
+-----------------------------------------------------
+          0.0       2535.0       2796.9       2886.9
+          1.0       4666.0       3862.1       3907.4
+          2.0       2995.0       2697.8       2644.3
+          3.0        895.0       1242.0       1193.0
+          4.0         84.0        425.2        403.7
+          5.0          0.0        115.7        109.3
+-----------------------------------------------------
+</mismatchDemogExp> <data>
+
+
+
+Confidence intervals (Percentile method):	 alpha=	0.010
+Based on 100 replicates
+
+-------------------------------------------------------------------------------------------
+                  Variable:       Est. val:     Low. bound:      Up. bound:     Mean Value:
+-------------------------------------------------------------------------------------------
+                      Tau:           1.354           1.049           2.859           1.382
+                   Theta0:           0.000           0.000           0.385           0.013               
+                   Theta1:       99999.000           3.653       99999.000       72018.472
+Mean No. of pairwise diff.           1.224           1.066           2.525           1.386
+           No. pol. sites:              13              72             109          90.290
+-------------------------------------------------------------------------------------------
+
+Confidence region for the observed mismatch:
+
+</data> <mismatchDemogExpCI_0.010000 pop="Tus muestras" time="31/01/17 at 14:16:17">
+
+-----------------------------------------------------------------
+        #Diff     Observed    Low. bound  Up. bound   Model Freq.
+-----------------------------------------------------------------
+          0.0       2535.0       1158.0       3916.0       2886.9
+          1.0       4666.0       1802.0       4698.0       3907.4
+          2.0       2995.0       1773.0       3411.0       2644.3
+          3.0        895.0        747.0       2548.0       1193.0
+          4.0         84.0        104.0       1771.0        403.7
+-----------------------------------------------------------------
+</mismatchDemogExpCI_0.010000> <data>
+
+
+
+Confidence intervals (Percentile method):	 alpha=	0.050
+Based on 100 replicates
+
+-------------------------------------------------------------------------------------------
+                  Variable:       Est. val:     Low. bound:      Up. bound:     Mean Value:
+-------------------------------------------------------------------------------------------
+                      Tau:           1.354           1.072           1.762           1.382
+                   Theta0:           0.000           0.000           0.118           0.013               
+                   Theta1:       99999.000           5.025       99999.000       72018.472
+Mean No. of pairwise diff.           1.224           1.146           1.788           1.386
+           No. pol. sites:              13              75             106          90.290
+-------------------------------------------------------------------------------------------
+
+Confidence region for the observed mismatch:
+
+</data> <mismatchDemogExpCI_0.050000 pop="Tus muestras" time="31/01/17 at 14:16:17">
+
+-----------------------------------------------------------------
+        #Diff     Observed    Low. bound  Up. bound   Model Freq.
+-----------------------------------------------------------------
+          0.0       2535.0       1568.0       3741.0       2886.9
+          1.0       4666.0       3315.0       4467.0       3907.4
+          2.0       2995.0       2047.0       3199.0       2644.3
+          3.0        895.0        848.0       1905.0       1193.0
+          4.0         84.0        190.0        731.0        403.7
+-----------------------------------------------------------------
+</mismatchDemogExpCI_0.050000> <data>
+
+
+
+Confidence intervals (Percentile method):	 alpha=	0.100
+Based on 100 replicates
+
+-------------------------------------------------------------------------------------------
+                  Variable:       Est. val:     Low. bound:      Up. bound:     Mean Value:
+-------------------------------------------------------------------------------------------
+                      Tau:           1.354           1.104           1.664           1.382
+                   Theta0:           0.000           0.000           0.067           0.013               
+                   Theta1:       99999.000          13.609       99999.000       72018.472
+Mean No. of pairwise diff.           1.224           1.173           1.639           1.386
+           No. pol. sites:              13              77             102          90.290
+-------------------------------------------------------------------------------------------
+
+Confidence region for the observed mismatch:
+
+</data> <mismatchDemogExpCI_0.100000 pop="Tus muestras" time="31/01/17 at 14:16:17">
+
+-----------------------------------------------------------------
+        #Diff     Observed    Low. bound  Up. bound   Model Freq.
+-----------------------------------------------------------------
+          0.0       2535.0       2080.0       3741.0       2886.9
+          1.0       4666.0       3433.0       4316.0       3907.4
+          2.0       2995.0       2338.0       3126.0       2644.3
+          3.0        895.0        882.0       1658.0       1193.0
+          4.0         84.0        213.0        673.0        403.7
+-----------------------------------------------------------------
+</mismatchDemogExpCI_0.100000> <data>
+
+
+
+
+
+
+================================================================================
+== Summary of computations done within populations
+================================================================================
+</data>
+
+ <A NAME="31_01_17at14_16_17_comp_sum_Basic"></A> 
+<data>
+
+
+----------------
+Basic properties
+----------------------------------------------------------
+          Statistics  Tus muestras        Mean        s.d.
+----------------------------------------------------------
+  No. of gene copies           150     150.000       0.000
+         No. of loci            13      13.000       0.000
+  No. of usable loci            13      13.000       0.000
+  No. of polym. loci            13      13.000       0.000
+----------------------------------------------------------
+</data>
+
+ <A NAME="31_01_17at14_16_17_comp_sum_het"></A> 
+<data>
+
+
+-----------------------
+Expected heterozygosity</data> <sumExpHeterozygosity samp="heteroz" time="31/01/17 at 14:16:17">
+--------------------------------------------------------
+Locus#  Tus muestras        Mean        s.d.   Tot. Het.
+--------------------------------------------------------
+     1       0.19186     0.19186     0.00000     0.19186
+     2       0.13682     0.13682     0.00000     0.13682
+     3       0.24242     0.24242     0.00000     0.24242
+     4       0.06488     0.06488     0.00000     0.06488
+     5       0.12528     0.12528     0.00000     0.12528
+     6       0.12528     0.12528     0.00000     0.12528
+     7       0.02649     0.02649     0.00000     0.02649
+     8       0.06488     0.06488     0.00000     0.06488
+     9       0.05226     0.05226     0.00000     0.05226
+    10       0.05226     0.05226     0.00000     0.05226
+    11       0.02649     0.02649     0.00000     0.02649
+    12       0.01333     0.01333     0.00000     0.01333
+    13       0.10166     0.10166     0.00000     0.10166
+--------------------------------------------------------
+  Mean       0.09415     0.09415     0.00000     0.09415
+  s.d.       0.06847     0.06847     0.00000     0.06847
+--------------------------------------------------------
+</sumExpHeterozygosity> <data>
+
+</data>
+
+ <A NAME="31_01_17at14_16_17_comp_sum_numAll"></A> 
+<data>
+
+
+-----------------
+Number of alleles</data> <sumNumAlleles samp="numAlleles" time="31/01/17 at 14:16:17">
+--------------------------------------------------------
+Locus#  Tus muestras        Mean        s.d. Tot. number
+--------------------------------------------------------
+     1             2       2.000       0.000           2
+     2             2       2.000       0.000           2
+     3             2       2.000       0.000           2
+     4             2       2.000       0.000           2
+     5             2       2.000       0.000           2
+     6             2       2.000       0.000           2
+     7             2       2.000       0.000           2
+     8             2       2.000       0.000           2
+     9             2       2.000       0.000           2
+    10             2       2.000       0.000           2
+    11             2       2.000       0.000           2
+    12             2       2.000       0.000           2
+    13             2       2.000       0.000           2
+--------------------------------------------------------
+  Mean         2.000       2.000       0.000       2.000
+  s.d.         0.000       0.000       0.000       0.000
+--------------------------------------------------------
+</sumNumAlleles> <data>
+
+</data>
+
+ <A NAME="31_01_17at14_16_17_comp_sum_moldiv"></A> 
+<data>
+
+
+---------------------------
+Molecular diversity indexes</data> <sumMolecDivIndexes samp="moldiv" time="31/01/17 at 14:16:17">
+
+---------------------------------------------------------------
+               Statistics  Tus muestras        Mean        s.d.
+---------------------------------------------------------------
+                  Theta_k       5.55161     5.55161     0.00000
+            Theta_k_lower       3.30824     3.30824     0.00000
+            Theta_k_upper       9.02736     9.02736     0.00000
+                  Theta_H       2.66845     2.66845     0.00000
+             s.d. Theta_H       0.52187     0.52187     0.00000
+                  Theta_S       2.32787     2.32787     0.00000
+             s.d. Theta_S       0.81639     0.81639     0.00000
+                 Theta_pi       1.22389     1.22389     0.00000
+            s.d. Theta_pi       0.86650     0.86650     0.00000
+</sumMolecDivIndexes> <data>
+
+---------------------------------------------------------------
+</data>
+
+ <A NAME="31_01_17at14_16_17_comp_sum_mismatch"></A> 
+<data>
+
+
+-----------------
+Mismatch analysis
+---------------------------------------------------------------
+               Statistics  Tus muestras        Mean        s.d.
+---------------------------------------------------------------
+
+Demographic expansion
+---------------------
+                      Tau       1.35352     1.35352     0.00000
+              Tau qt 2.5%       1.07227     1.07227     0.00000
+                Tau qt 5%       1.10352     1.10352     0.00000
+               Tau qt 95%       1.62109     1.62109     0.00000
+             Tau qt 97.5%       1.72266     1.72266     0.00000
+                   Theta0       0.00000     0.00000     0.00000
+           Theta0 qt 2.5%       0.00000     0.00000     0.00000
+             Theta0 qt 5%       0.00000     0.00000     0.00000
+            Theta0 qt 95%       0.06152     0.06152     0.00000
+          Theta0 qt 97.5%       0.10547     0.10547     0.00000
+                   Theta1   99999.00000 99999.00000     0.00000
+           Theta1 qt 2.5%       4.00977     4.00977     0.00000
+             Theta1 qt 5%      13.57031    13.57031     0.00000
+            Theta1 qt 95%   99999.00000 99999.00000     0.00000
+          Theta1 qt 97.5%   99999.00000 99999.00000     0.00000
+                      SSD       0.00811     0.00811     0.00000
+      Model (SSD) p-value       0.00000     0.00000     0.00000
+         Raggedness index       0.09936     0.09936     0.00000
+       Raggedness p-value       0.01000     0.01000     0.00000
+---------------------------------------------------------------
+
+////////////////////////////////////////////////////////////////////
+END OF RUN NUMBER 303 (31/01/17 at 14:16:17))
+Total computing time for this run : 0h 0m 0s 552 ms
+////////////////////////////////////////////////////////////////////
+
+
+</data>
+
+</Arlequin>
+
