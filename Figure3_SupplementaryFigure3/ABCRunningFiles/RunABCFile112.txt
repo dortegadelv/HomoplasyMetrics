@@ -1,0 +1,6 @@
+
+    RandomFile=../12".random"
+    ExitFile="../Set2/12."$SGE_TASK_ID".out"
+    echo $RandomFile
+    echo $ExitFile
+    ../Programs/ABC/ABC 150 200000 -z 6 -eN tbs tbs -t tbs -Q -a 0.1 -seeds 1 1 12 -A 10000 -H -C -R -K ../Set2/12.txt < $RandomFile > $ExitFile

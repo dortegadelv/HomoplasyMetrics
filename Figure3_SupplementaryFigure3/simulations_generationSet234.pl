@@ -1,0 +1,11 @@
+system ("mkdir Set2");
+system ("mkdir Set3");
+system ("mkdir Set4");
+chdir ("Set2");
+system("../../Programs/msHOT-derivedSSRSimulator/msHOT 150 110 -t 30 -eN 0.05 0.001 -Q -z 6 -seeds 2 3 4");
+chdir("..");
+chdir ("Set3");
+system("../../Programs/msHOT-derivedSSRSimulator/msHOT 150 110 -t 30 -eN 0.1 0.001 -Q -z 6 -seeds 2 3 4");
+chdir("..");
+chdir ("Set4");
+system("../../Programs/msHOT-derivedSSRSimulator/msHOT 150 110 -t 30 -eN 0.15 0.001 -Q -z 6 -seeds 2 3 4");
