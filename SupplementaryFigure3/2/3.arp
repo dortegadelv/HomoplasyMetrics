@@ -1,0 +1,26 @@
+[Profile]
+Title="A small example of microsatellite data"
+NbSamples=1
+GenotypicData=0
+GameticPhase=1
+DataType=RFLP
+LocusSeparator=WHITESPACE
+[Data]
+[[Samples]]
+SampleName="Tus muestras"
+SampleSize=150
+SampleData=	{
+Hap0	32	1001110
+Hap1	64	1001100
+Hap2	12	1101100
+Hap3	2	0001110
+Hap4	1	0001111
+Hap5	6	0001000
+Hap6	9	0001100
+Hap7	9	1101110
+Hap8	2	1001111
+Hap9	8	1001000
+Hap10	2	1101000
+Hap11	2	1000000
+Hap12	1	1111100
+} 

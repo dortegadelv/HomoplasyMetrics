@@ -224,55 +224,77 @@ DHValues <- c()
 Tij <- 0
 SumTermTwo <- 0 
 
-for (j in 1:150){
-
+    print (j)
 	CumulativeFSMM <- 0
 	CumulativeFIS <- 0
 	CumulativeFisSing <- 0
 	CumulativeFsmmSing <- 0
 	CumulativePiis <- 0
 	CumulativePsmm <- 0	
-	
-for (k in 150:2){
-
-	n <- 150
+	ExpectedValue <- 0
+    TotalProb <- 0 + dexp(0,1/(N))
+    j <- 1
+for (k in 1:500000){
+    if (k %% 1000 == 0){
+    print (k)
+    }
+	n <- 2
 	TermOne <- 2*((1/(k-1)) - (1/n))
 	TermTwo <- (2*(n+1))/(k*(k+1)*(n-1))
 	Tij <- Tij + TermOne*TermTwo*2*N
 	NormalTijCalcPart <- NormalTijCalcPart + TermOne*TermTwo*2*N
 	CurrentGens <- TermOne*2*N
-	CurrentTau <- CurrentGens *6*5.5e-5
+	CurrentTau <- 2 * k * 6 * 5.5e-5
 	
 	if (CurrentTau > KeyTauTimes[j]){
 	CurrentTau <- KeyTauTimes[j]
-	}
-	
-	print(CurrentTau)
-	print(TermTwo)
-	CumulativeFSMM <- CumulativeFSMM + TermTwo * F_smm(CurrentTau)
-	CumulativeFIS <- CumulativeFIS + TermTwo * exp(-CurrentTau)
-	CumulativeFisSing <-CumulativeFisSing + TermTwo * exp(-CurrentTau/6)
-	CumulativeFsmmSing <- CumulativeFsmmSing + TermTwo * SiteFSMM(CurrentTau)
-	CumulativePiis <- CumulativePiis + TermTwo* (CurrentTau)
-	CumulativePsmm <- CumulativePsmm + TermTwo* Pi_SMM(CurrentTau)
-	
+    CurrentTauFinalProb <- 1 - TotalProb
+    CumulativeFSMM_1 <- CumulativeFSMM + CurrentTauFinalProb * F_smm(CurrentTau)
+    CumulativeFIS_1 <- CumulativeFIS + CurrentTauFinalProb * exp(-CurrentTau)
+    CumulativeFisSing_1 <-CumulativeFisSing + CurrentTauFinalProb * exp(-CurrentTau/6)
+    CumulativeFsmmSing_1 <- CumulativeFsmmSing + CurrentTauFinalProb * SiteFSMM(CurrentTau)
+    CumulativePiis_1 <- CumulativePiis + CurrentTauFinalProb * (CurrentTau)
+    CumulativePsmm_1 <- CumulativePsmm + CurrentTauFinalProb * Pi_SMM(CurrentTau)
+    
+    Theory_IS_MSH <- c(Theory_IS_MSH,CumulativeFisSing_1)
+    Theory_SMM_MSH <- c(Theory_SMM_MSH,CumulativeFsmmSing_1)
+    Theory_IS_P <- c(Theory_IS_P,CumulativeFIS_1)
+    Theory_SMM_P <- c(Theory_SMM_P,CumulativeFSMM_1)
+    Theory_IS_DH <- c(Theory_IS_DH,CumulativePiis_1)
+    Theory_SMM_DH <- c(Theory_SMM_DH,CumulativePsmm_1)
+    PValues <- c(PValues,(1-CumulativeFIS_1/CumulativeFSMM_1))
+    MSHValues <- c(MSHValues,(1-CumulativeFisSing_1/CumulativeFsmmSing_1))
+    DHValues <- c(DHValues,(1-CumulativePsmm_1/CumulativePiis_1))
+    j <- j +1
+    
+    }else {
+        
+    Probability <- dexp(k,1/(N))
+    ExpectedValue <- ExpectedValue + k * Probability
+    TotalProb <- TotalProb + Probability
+
+    CumulativeFSMM <- CumulativeFSMM + Probability * F_smm(CurrentTau)
+    CumulativeFIS <- CumulativeFIS + Probability * exp(-CurrentTau)
+    CumulativeFisSing <-CumulativeFisSing + Probability * exp(-CurrentTau/6)
+    CumulativeFsmmSing <- CumulativeFsmmSing + Probability * SiteFSMM(CurrentTau)
+    CumulativePiis <- CumulativePiis + Probability* (CurrentTau)
+    CumulativePsmm <- CumulativePsmm + Probability* Pi_SMM(CurrentTau)
+    
+    }
+    
+    #	print(CurrentTau)
+    #	print(TermTwo)
 	
 	SumTermTwo <- SumTermTwo + TermTwo
+    if (j==151){
+    break
+    }
 #	CheckTermTwo <- c(CheckTermTwo,TermTwo)
 #	CheckTermOne <- c(CheckTermOne,TermOne)
 #	CheckTermTwo <- c()
 #	CheckTermOne <- c()
 }
-	Theory_IS_MSH <- c(Theory_IS_MSH,CumulativeFisSing)
-	Theory_SMM_MSH <- c(Theory_SMM_MSH,CumulativeFsmmSing)
-	Theory_IS_P <- c(Theory_IS_P,CumulativeFIS)
-	Theory_SMM_P <- c(Theory_SMM_P,CumulativeFSMM)
-	Theory_IS_DH <- c(Theory_IS_DH,CumulativePiis)
-	Theory_SMM_DH <- c(Theory_SMM_DH,CumulativePsmm)
-	PValues <- c(PValues,(1-CumulativeFIS/CumulativeFSMM))
-	MSHValues <- c(MSHValues,(1-CumulativeFisSing/CumulativeFsmmSing))
-	DHValues <- c(DHValues,(1-CumulativePsmm/CumulativePiis))
-}
+
 
 
 pdf("EstimatesVsTheoryMSH_StepwiseCoalModel.pdf")

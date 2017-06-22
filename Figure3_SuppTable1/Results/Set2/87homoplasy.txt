@@ -1,0 +1,2 @@
+Sizehomoplasyloc	SH	MASH	SASH	SHchanges	SHdist	HBC	Variance	Heterozygosis	Numberofconfig	Pi	Sites	Singleton	Micsitesvar	Heteromean	configmicvar	TMRCA
+0.038176	0.607278	0.518709	0.184023	0.769231	0.155336	0.250000	0.218941	0.296108	33	2.043669	15	1	0.700000	0.874541	0.700000	0.050834

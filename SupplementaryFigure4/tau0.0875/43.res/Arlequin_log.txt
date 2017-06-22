@@ -1,0 +1,51 @@
+Log file path: Z:/Users/vicentediegoortegadelvecchyo/Dropbox/Documents/Pinero/Articulo_homoplasia/Articulo/VersionesDeArticulo/HomoplasyPaperFigures/Figures/SupplementaryFigure2/tau0.0875/43.res/Arlequin_log.txt
+Core Routine Directory: C:/Program Files/WinArl3.5/
+Random number generator initialized with lidum=1068572
+Reading project profile section...
+done !
+Opening next project...
+Z:/Users/vicentediegoortegadelvecchyo/Dropbox/Documents/Pinero/Articulo_homoplasia/Articulo/VersionesDeArticulo/HomoplasyPaperFigures/Figures/SupplementaryFigure2/tau0.0875/43.arp
+////////////////////////////////////////////////////////////////////
+RUN NUMBER 85 (31/01/17 at 16:40:43)
+////////////////////////////////////////////////////////////////////
+
+
+Reading Project: A small example of microsatellite data
+Reading input file ...
+	Reading Samples section ...
+	Reading Tus muestras ... 
+	done ! (0 ms)
+
+	done reading Samples section! (329 ms)
+	Keyword "MissingData" not found. Using default value ("?"). Check your project file.
+
+done ! (0 ms)
+
+Warning: The locus separator has been removed
+
+
+------------------------------------------------------------------------
+  Checking all selected options...
+		Building vectors of alleles...
+		done in 2 ms
+  done!
+  check selected settings...
+  done!
+
+Population 'Tus muestras' : 
+	Computing standard diversity indices ...
+	done !
+	Computing molecular diversity...
+			Computing BMat ...
+			done ! (0 ms)
+	done ! (0 ms)
+	Computing mismatch distribution...
+	done ! (273 ms)
+done in 277 ms
+
+////////////////////////////////////////////////////////////////////
+END OF RUN NUMBER 85 (31/01/17 at 16:40:43))
+Total computing time for this run : 0h 0m 0s 286 ms
+////////////////////////////////////////////////////////////////////
+
+Successful run of Z:/Users/vicentediegoortegadelvecchyo/Dropbox/Documents/Pinero/Articulo_homoplasia/Articulo/VersionesDeArticulo/HomoplasyPaperFigures/Figures/SupplementaryFigure2/tau0.0875/43.arp

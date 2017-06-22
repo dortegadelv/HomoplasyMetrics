@@ -1,0 +1,1 @@
+system("../Programs/msHOT-derivedSSRSimulator/msHOT 88 1002 -t 12.6486 -eN 0.2369397 0.0000382 -Q -z 7 -seeds 10 20 30 > ConfidenceIntervalsNavascues/Exit.txt");

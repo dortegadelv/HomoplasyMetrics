@@ -1,0 +1,1 @@
+int lineal0flag,lineal1flag,linealtflag;
